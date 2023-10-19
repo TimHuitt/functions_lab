@@ -15,7 +15,7 @@ let maxOfThree = function(num1, num2, num3) {
 
 // 3
 function isCharVowel(char) {
-    vowels = ['a', 'e', 'i', 'o', 'u'];
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
     return vowels.includes(char) ? true : false;
 }
 // console.log(isCharVowel('b'))
@@ -48,7 +48,7 @@ let numArgs = function(args) {
 
 // 7
 function reverseString(str) {
-    let revStr = []
+    const revStr = []
     for (let i = str.length; i >= 0; i--) {
         revStr.push(str[i]);
     }
