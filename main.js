@@ -47,10 +47,11 @@ let numArgs = function(args) {
 // console.log(numArgs(1, 2, 3, 213, 856, 321));
 
 // 7
+// corrected for accuracy
 function reverseString(str) {
-    const revStr = []
-    for (let i = str.length; i >= 0; i--) {
-        revStr.push(str[i]);
+    let revStr = ''
+    for (let i = str.length - 1; i >= 0; i--) {
+        revStr += str[i];
     }
     return revStr.join('');
 }
